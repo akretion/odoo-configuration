@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+<record id="pcg_5115" model="account.account.template">
+  <field name="name">Carte Bancaire à encaisser</field>
+  <field name="code">5115</field>
+  <field name="type">other</field>
+  <field name="user_type" ref="account.data_account_type_cash"/>
+  <field name="parent_id" ref="l10n_fr.pcg_511"/>
+</record>
+
+    </data>
+</openerp>
