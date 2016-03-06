@@ -5,13 +5,15 @@
 
 from openerp import api, models
 
+
 class WizardMultiChartsAccounts(models.AbstractModel):
     _inherit = 'wizard.multi.charts.accounts'
 
     @api.model
-    def _prepare_all_journals(self, chart_template_id, acc_template_ref, company_id):
+    def _prepare_all_journals(self, chart_template_id, acc_template_ref,
+                              company_id):
         data = super(WizardMultiChartsAccounts, self)._prepare_all_journals(
-           chart_template_id, acc_template_ref, company_id)
+            chart_template_id, acc_template_ref, company_id)
         debit_tmpl_acc = self.env.ref('l10n_fr_chq_journal.pcg_51121')
         credit_tmpl_acc = self.env.ref('l10n_fr_chq_journal.pcg_51123')
         data.append({
