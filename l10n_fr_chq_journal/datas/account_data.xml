@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    
+<record id="l10n_fr.pcg_5112" model="account.account.template">
+  <field name="type">view</field>
+</record>
+
+<record id="pcg_51121" model="account.account.template">
+  <field name="name">Chèques reçu</field>
+  <field name="code">51121</field>
+  <field name="type">other</field>
+  <field name="user_type" ref="account.data_account_type_cash"/>
+  <field name="parent_id" ref="l10n_fr.pcg_5112"/>
+</record>
+
+<record id="pcg_51122" model="account.account.template">
+  <field name="name">Chèques remis en banque</field>
+  <field name="code">51122</field>
+  <field name="type">other</field>
+  <field name="user_type" ref="account.data_account_type_cash"/>
+  <field name="parent_id" ref="l10n_fr.pcg_5112"/>
+</record>
+
+<record id="pcg_51123" model="account.account.template">
+  <field name="name">Chèques émis</field>
+  <field name="code">51123</field>
+  <field name="type">other</field>
+  <field name="user_type" ref="account.data_account_type_cash"/>
+  <field name="parent_id" ref="l10n_fr.pcg_5112"/>
+</record>
+
+    </data>
+</openerp>
