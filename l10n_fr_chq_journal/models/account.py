@@ -53,7 +53,8 @@ class AccountTemplate(models.Model):
             code_digits, company_id)
         company = self.env['res.company'].browse(company_id)
         check_account = self.env.ref('l10n_fr_chq_journal.pcg_51122')
-        company.write({
-            'check_deposit_account_id': acc_tmpl_ref[check_account.id],
-            })
+        if acc_tmpl_ref.get(check_account.id):
+            company.write({
+                'check_deposit_account_id': acc_tmpl_ref[check_account.id],
+                })
         return acc_tmpl_ref
