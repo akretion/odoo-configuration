@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
-    <data>
+    <data noupdate="1">
     
 <record id="l10n_fr.pcg_5112" model="account.account.template">
   <field name="type">view</field>
